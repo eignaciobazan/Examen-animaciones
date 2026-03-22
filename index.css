@@ -17,7 +17,6 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    animation: moverCarro 5s linear infinite;
 }
 
 @keyframes moverCarro {
@@ -29,4 +28,9 @@ body {
     }
     
     100% { left: 100%; }
+}
+
+/* Cuando el checkbox está marcado, animamos el carro */
+#toggle:checked ~ .pista .carro {
+    animation: moverCarro 5s linear infinite;
 }
