@@ -15,19 +15,18 @@ body {
 .carro {
     width: 150px;
     position: absolute;
-    left: 0;
+    left: 20px;
     bottom: 0;
+    top: -90px;
+    offset-path: path("M 100 80 L 500 80 Z");
+    offset-distance: 0%;
+    offset-rotate: 0deg; /* ← evita que gire */
 }
 
 @keyframes moverCarro {
-    0% { left: 0; }
-    
-    50%{
-        border-radius: 10rem;
-        transform: translateY(-4rem) rotate(180deg);
+    to {
+        offset-distance: 100%;
     }
-    
-    100% { left: 100%; }
 }
 
 /* Cuando el checkbox está marcado, animamos el carro */
