@@ -1,0 +1,32 @@
+body {
+    background-image: url("/imagenes/Imagen1.jpg");
+    background-size: cover;       /* La imagen cubre toda la pantalla */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center;  /* Centra la imagen */
+    
+}
+.pista {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    margin-top: 100px; /* baja la pista para que no quede arriba */
+}
+
+.carro {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: moverCarro 5s linear infinite;
+}
+
+@keyframes moverCarro {
+    0% { left: 0; }
+    
+    50%{
+        border-radius: 10rem;
+        transform: translateY(-4rem) rotate(180deg);
+    }
+    
+    100% { left: 100%; }
+}
