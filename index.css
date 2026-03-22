@@ -18,9 +18,9 @@ body {
     left: 20px;
     bottom: 0;
     top: -90px;
-    offset-path: path("M 100 80 L 200 80 L 00 Z");
+    offset-path: path("M 100 80 L 200 80 L 400 180 L 400 400 L 100 370 L 100 100 Z");
     offset-distance: 0%;
-    offset-rotate: 0deg; /* ← evita que gire */
+    offset-rotate: auto; /* ← evita que gire */
 }
 
 @keyframes moverCarro {
